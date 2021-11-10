@@ -30,7 +30,6 @@ public abstract class TileMod extends TileEntity {
 	@Override
 	public CompoundNBT write(CompoundNBT par1nbtTagCompound) {
 		CompoundNBT nbt = super.write(par1nbtTagCompound);
-
 		writeSharedNBT(par1nbtTagCompound);
 		return nbt;
 	}
@@ -38,7 +37,6 @@ public abstract class TileMod extends TileEntity {
 	@Override
 	public void read(BlockState p_230337_1_, CompoundNBT p_230337_2_) {
 		super.read(p_230337_1_, p_230337_2_);
-
 		readSharedNBT(p_230337_2_);
 	}
 
