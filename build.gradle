@@ -14,8 +14,9 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.minecraftforge.gradle'
 }
+
+apply plugin: 'net.minecraftforge.gradle'
 
 ext.configFile = file('build.properties')
 ext.config = parseConfig(configFile)
